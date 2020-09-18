@@ -22,6 +22,12 @@ namespace OZTF.EducationManageSys.Infrastructure.Domain.Teachers
                 .HasMaxLength(50)
                 .IsRequired(true);
 
+            builder.Property("_tNumber")
+                .HasColumnName("TNumber")
+                .HasColumnType("varchar")
+                .HasMaxLength(50)
+                .IsRequired(true);
+
             builder.Property("_birthday")
                 .HasColumnName("Birthday")
                 .HasColumnType("date")

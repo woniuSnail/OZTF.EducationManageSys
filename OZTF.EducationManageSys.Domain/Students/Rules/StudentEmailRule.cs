@@ -22,22 +22,18 @@ namespace OZTF.EducationManageSys.Domain.Students.Rules
 
         public bool IsPass()
         {
-            var result = false;
+            var result = true;
             if(_studentCheck.IsEmailNull(_studentEmail))
             {
-                Message = "邮箱地址是空";
+                Message = "邮箱地址不能空";
                 ErrorCode = 1001;
                 result = false;
             }
-            else if (!_studentCheck.IsEmailUnique(_studentEmail))
+            if (!_studentCheck.IsEmailUnique(_studentEmail))
             {
                 Message = "邮箱地址已存在";
                 ErrorCode = 1002;
                 result = false;
-            }
-            else
-            {
-                result = true;
             }
             return result;
         }

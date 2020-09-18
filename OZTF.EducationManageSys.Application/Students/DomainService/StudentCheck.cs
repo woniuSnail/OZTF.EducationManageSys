@@ -1,4 +1,4 @@
-﻿using OZTF.EducationManageSys.Domain.Students.RuleInterfaces;
+﻿using OZTF.EducationManageSys.Domain.Students;
 
 namespace OZTF.EducationManageSys.Application.Students.DomainService
 {

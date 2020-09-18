@@ -1,7 +1,6 @@
 ﻿using OZTF.EducationManageSys.Application.Configuration.Commands;
 using OZTF.EducationManageSys.Application.Students.Dto;
 using OZTF.EducationManageSys.Domain.Students;
-using OZTF.EducationManageSys.Domain.Students.RuleInterfaces;
 using System;
 using System.Collections.Generic;
 using System.Text;

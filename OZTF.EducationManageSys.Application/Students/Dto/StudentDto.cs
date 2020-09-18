@@ -1,7 +1,4 @@
-﻿using OZTF.EducationManageSys.Application.Configuration.Commands;
-using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System;
 
 namespace OZTF.EducationManageSys.Application.Students.Dto
 {
