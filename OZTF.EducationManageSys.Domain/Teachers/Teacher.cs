@@ -1,6 +1,7 @@
 ﻿using OZTF.EducationManageSys.Domain.SeedWork;
 using OZTF.EducationManageSys.Domain.Teachers.Rules;
 using System;
+using System.Runtime.CompilerServices;
 
 namespace OZTF.EducationManageSys.Domain.Teachers
 {
@@ -76,6 +77,29 @@ namespace OZTF.EducationManageSys.Domain.Teachers
             teacher._addTime = DateTime.Now;
             teacher._updateTime = null;
             return teacher;
+        }
+
+        /// <summary>
+        /// 修改
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="name"></param>
+        /// <param name="tNumber"></param>
+        /// <param name="biethday"></param>
+        /// <param name="phone"></param>
+        /// <param name="email"></param>
+        /// <param name="entryTime"></param>
+        /// <returns></returns>
+        public void Update(string name, string tNumber, DateTime birthday, string phone, string email, DateTime? entryTime, ITeacherCheck teacherCheck)
+        {
+            CheckRule(new TeacherEmailRule(teacherCheck, email));
+
+            this._name = name;
+            this._tNumber = tNumber;
+            this._birthday = birthday;
+            this._phone = phone;
+            this._email = email;
+            this._entryTime = entryTime;
         }
     }
 }

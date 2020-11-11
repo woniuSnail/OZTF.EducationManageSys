@@ -35,7 +35,7 @@ namespace OZTF.EducationManageSys.Application.Students.GetStudentsByCondition
             }
 
             var sql = $@"select Id,SNumber,Name,Email,Phone,AdmissionTime,Birthday from student where 1=1 { strWhere } 
-                    order by AddTime desc limit {request.PageSize * request.CurrentPage},{ request.PageSize * (request.CurrentPage + 1)}";
+                    order by AddTime desc limit {request.PageSize * request.CurrentPage - 1},{ request.PageSize }";
 
             //通过条件获取学生
             return _sqlConnectionFactory.GetOpenConnection().QueryAsync<StudentDto>(sql, request);

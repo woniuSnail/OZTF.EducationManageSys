@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using OZTF.EducationManageSys.Config;
 
 namespace OZTF.EducationManageSys
 {
@@ -23,6 +24,13 @@ namespace OZTF.EducationManageSys
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+
+            services.AddHttpClient("WebAPIConnector")
+                .ConfigureHttpMessageHandlerBuilder(builder =>
+                {
+                    var serviceDiscovery = new ServiceDiscoveryMessageHandler();
+                    builder.AdditionalHandlers.Add(serviceDiscovery);
+                });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

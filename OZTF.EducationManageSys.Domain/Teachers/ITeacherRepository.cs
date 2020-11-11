@@ -18,11 +18,5 @@ namespace OZTF.EducationManageSys.Domain.Teachers
         /// </summary>
         /// <returns></returns>
         Task AddAsync(Teacher teacher);
-
-        /// <summary>
-        /// 修改教师
-        /// </summary>
-        /// <returns></returns>
-        Task UpdateAsync(Teacher teacher);
     }
 }
