@@ -1,7 +1,12 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\OZTF.EducationManageSys.Application\OZTF.EducationManageSys.Application.csproj" />
+    <ProjectReference Include="..\OZTF.EducationManageSys.Infrastructure\OZTF.EducationManageSys.Infrastructure.csproj" />
+  </ItemGroup>
 
 </Project>

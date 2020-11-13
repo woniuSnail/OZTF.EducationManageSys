@@ -31,6 +31,10 @@ namespace OZTF.EducationManageSys
                     var serviceDiscovery = new ServiceDiscoveryMessageHandler();
                     builder.AdditionalHandlers.Add(serviceDiscovery);
                 });
+            services.AddHttpClient("EducationManageService", config =>
+            {
+                config.BaseAddress = new Uri("http://");
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -44,6 +48,7 @@ namespace OZTF.EducationManageSys
             {
                 app.UseExceptionHandler("/Home/Error");
             }
+
             app.UseStaticFiles();
 
             app.UseRouting();

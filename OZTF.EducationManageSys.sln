@@ -5,13 +5,15 @@ VisualStudioVersion = 16.0.30413.136
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OZTF.EducationManageSys", "OZTF.EducationManageSys\OZTF.EducationManageSys.csproj", "{44DE1552-2DAE-4900-8058-10096ED79954}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OZTF.EducationManageSys.API", "OZTF.EducationManageSys.API\OZTF.EducationManageSys.API.csproj", "{968A7CAF-BDC2-4B13-A933-5556CCBFF066}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OZTF.EducationManageSys.API", "OZTF.EducationManageSys.API\OZTF.EducationManageSys.API.csproj", "{968A7CAF-BDC2-4B13-A933-5556CCBFF066}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OZTF.EducationManageSys.Application", "OZTF.EducationManageSys.Application\OZTF.EducationManageSys.Application.csproj", "{76A1C086-9603-4B61-BA84-2135E37E0DF2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OZTF.EducationManageSys.Application", "OZTF.EducationManageSys.Application\OZTF.EducationManageSys.Application.csproj", "{76A1C086-9603-4B61-BA84-2135E37E0DF2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OZTF.EducationManageSys.Domain", "OZTF.EducationManageSys.Domain\OZTF.EducationManageSys.Domain.csproj", "{427E91F5-BF1F-4CB4-8B5C-6CC30260943A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OZTF.EducationManageSys.Domain", "OZTF.EducationManageSys.Domain\OZTF.EducationManageSys.Domain.csproj", "{427E91F5-BF1F-4CB4-8B5C-6CC30260943A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OZTF.EducationManageSys.Infrastructure", "OZTF.EducationManageSys.Infrastructure\OZTF.EducationManageSys.Infrastructure.csproj", "{164FA02C-BDE6-4F4D-8939-3C9D087A696A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OZTF.EducationManageSys.Infrastructure", "OZTF.EducationManageSys.Infrastructure\OZTF.EducationManageSys.Infrastructure.csproj", "{164FA02C-BDE6-4F4D-8939-3C9D087A696A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OZTF.EducationManageSys.App", "OZTF.EducationManageSys.App\OZTF.EducationManageSys.App.csproj", "{D8FBDA67-B71E-42AA-8A12-4ECE56EAE5A1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{164FA02C-BDE6-4F4D-8939-3C9D087A696A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{164FA02C-BDE6-4F4D-8939-3C9D087A696A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{164FA02C-BDE6-4F4D-8939-3C9D087A696A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8FBDA67-B71E-42AA-8A12-4ECE56EAE5A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8FBDA67-B71E-42AA-8A12-4ECE56EAE5A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8FBDA67-B71E-42AA-8A12-4ECE56EAE5A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8FBDA67-B71E-42AA-8A12-4ECE56EAE5A1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
